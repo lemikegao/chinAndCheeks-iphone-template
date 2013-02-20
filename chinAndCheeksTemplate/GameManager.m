@@ -8,6 +8,7 @@
 
 #import "GameManager.h"
 #import "MainMenuScene.h"
+#import "GameScene.h"
 
 @interface GameManager()
 
@@ -115,6 +116,9 @@ static GameManager *_sharedGameManager = nil;   // singleton
         case kSceneTypeMainMenu:
             result = @"kSceneTypeMainMenu";
             break;
+        case kSceneTypeGame:
+            result = @"kSceneTypeGame";
+            break;
         default:
             [NSException raise:NSGenericException format:@"Unexpected SceneType."];
     }
@@ -147,9 +151,9 @@ static GameManager *_sharedGameManager = nil;   // singleton
     // 4. If the list of soundEffectFiles is empty, load it
     if ((self.listOfSoundEffectFiles == nil) ||
         ([self.listOfSoundEffectFiles count] < 1)) {
-        NSLog(@"Before");
+//        NSLog(@"Before");
         [self setListOfSoundEffectFiles:[[NSMutableDictionary alloc] init]];
-        NSLog(@"after");
+//        NSLog(@"after");
         for (NSString *sceneSoundDictionary in plistDictionary) {
             [self.listOfSoundEffectFiles addEntriesFromDictionary:[plistDictionary objectForKey:sceneSoundDictionary]];
         }
@@ -287,6 +291,9 @@ static GameManager *_sharedGameManager = nil;   // singleton
     switch (sceneID) {
         case kSceneTypeMainMenu:
             sceneToRun = [MainMenuScene node];
+            break;
+        case kSceneTypeGame:
+            sceneToRun = [GameScene node];
             break;
         default:
             CCLOG(@"Unknown sceneID, cannot run scene");
