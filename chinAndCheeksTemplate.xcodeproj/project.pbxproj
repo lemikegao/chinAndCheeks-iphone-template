@@ -39,6 +39,7 @@
 		C47F72AD16DF8DEC0006EEFB /* Default@2x~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C47F72A916DF8DEC0006EEFB /* Default@2x~ipad.png */; };
 		C47F72AE16DF8DEC0006EEFB /* Default@2x~iphone.png in Resources */ = {isa = PBXBuildFile; fileRef = C47F72AA16DF8DEC0006EEFB /* Default@2x~iphone.png */; };
 		C47F72AF16DF8DEC0006EEFB /* Default~ipad.png in Resources */ = {isa = PBXBuildFile; fileRef = C47F72AB16DF8DEC0006EEFB /* Default~ipad.png */; };
+		C47F72B916DF90030006EEFB /* CCTouchDownMenu.m in Sources */ = {isa = PBXBuildFile; fileRef = C47F72B816DF90030006EEFB /* CCTouchDownMenu.m */; };
 		DC0864B815BD8CE60044A820 /* CCNode+Debug.h in Headers */ = {isa = PBXBuildFile; fileRef = DC0864B515BD8CE60044A820 /* CCNode+Debug.h */; };
 		DC0864B915BD8CE60044A820 /* CCNode+Debug.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0864B615BD8CE60044A820 /* CCNode+Debug.m */; };
 		DC0864BA15BD8CE60044A820 /* ccCArray.m in Sources */ = {isa = PBXBuildFile; fileRef = DC0864B715BD8CE60044A820 /* ccCArray.m */; };
@@ -325,6 +326,8 @@
 		C47F72A916DF8DEC0006EEFB /* Default@2x~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~ipad.png"; sourceTree = "<group>"; };
 		C47F72AA16DF8DEC0006EEFB /* Default@2x~iphone.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x~iphone.png"; sourceTree = "<group>"; };
 		C47F72AB16DF8DEC0006EEFB /* Default~ipad.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default~ipad.png"; sourceTree = "<group>"; };
+		C47F72B716DF90030006EEFB /* CCTouchDownMenu.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CCTouchDownMenu.h; sourceTree = "<group>"; };
+		C47F72B816DF90030006EEFB /* CCTouchDownMenu.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CCTouchDownMenu.m; sourceTree = "<group>"; };
 		DC0864B515BD8CE60044A820 /* CCNode+Debug.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "CCNode+Debug.h"; sourceTree = "<group>"; };
 		DC0864B615BD8CE60044A820 /* CCNode+Debug.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "CCNode+Debug.m"; sourceTree = "<group>"; };
 		DC0864B715BD8CE60044A820 /* ccCArray.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ccCArray.m; sourceTree = "<group>"; };
@@ -697,6 +700,8 @@
 		C4993D2316576C39008187A8 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				C47F72B716DF90030006EEFB /* CCTouchDownMenu.h */,
+				C47F72B816DF90030006EEFB /* CCTouchDownMenu.m */,
 				C4993D2416576C46008187A8 /* Scenes */,
 				C4993D2616576C92008187A8 /* GameObjects */,
 				C4993D2716576C9F008187A8 /* Constants */,
@@ -1442,6 +1447,7 @@
 				C4514FE0165891EE0073A119 /* GameObject.m in Sources */,
 				C447906716D520BD00A64CC7 /* GameScene.m in Sources */,
 				C447906A16D520C400A64CC7 /* GameLayer.m in Sources */,
+				C47F72B916DF90030006EEFB /* CCTouchDownMenu.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
