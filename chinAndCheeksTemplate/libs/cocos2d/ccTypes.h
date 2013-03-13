@@ -97,7 +97,7 @@ ccc4(const GLubyte r, const GLubyte g, const GLubyte b, const GLubyte o)
 static inline ccColor4B
 ccc4BFromccc3B(ccColor3B c)
 {
-    return (ccColor4F){c.r, c.g, c.b, 255};
+    return (ccColor4B){c.r, c.g, c.b, 255};
 }
 
 /** RGBA color composed of 4 floats
