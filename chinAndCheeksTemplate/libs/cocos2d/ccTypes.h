@@ -93,6 +93,12 @@ ccc4(const GLubyte r, const GLubyte g, const GLubyte b, const GLubyte o)
 	return c;
 }
 
+//! helper macro that converts ccColor3B to ccColor4B
+static inline ccColor4B
+ccc4BFromccc3B(ccColor3B c)
+{
+    return (ccColor4F){c.r, c.g, c.b, 255};
+}
 
 /** RGBA color composed of 4 floats
 @since v0.8
