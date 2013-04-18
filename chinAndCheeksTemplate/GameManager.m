@@ -308,7 +308,7 @@ static GameManager *_sharedGameManager = nil;   // singleton
     }
     
     // load audio for new scene based on sceneID
-    [self performSelectorInBackground:@selector(loadAudioForSceneWithID:) withObject:[NSNumber numberWithInt:self.currentScene]];
+//    [self performSelectorInBackground:@selector(loadAudioForSceneWithID:) withObject:[NSNumber numberWithInt:self.currentScene]];
     
     if ([[CCDirector sharedDirector] runningScene] == nil) {
         [[CCDirector sharedDirector] pushScene:sceneToRun];
@@ -316,7 +316,7 @@ static GameManager *_sharedGameManager = nil;   // singleton
         [[CCDirector sharedDirector] replaceScene:sceneToRun];
     }
     
-    [self performSelectorInBackground:@selector(unloadAudioForSceneWithID:) withObject:[NSNumber numberWithInt:oldScene]];
+//    [self performSelectorInBackground:@selector(unloadAudioForSceneWithID:) withObject:[NSNumber numberWithInt:oldScene]];
     
     self.currentScene = sceneID;
 }
